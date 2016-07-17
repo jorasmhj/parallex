@@ -24,7 +24,7 @@ $(window).scroll(function(){
     }
     
     if(wScroll > $('.content article').offset.top - $(window).height()){
-         consol.log('ok');
+         console.log('ok');
     }
 
     if(wScroll > $('.large-window').offset().top-$(window).height()){
