@@ -4,13 +4,20 @@ html(lang='en')
   head
     link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans')
     link(rel='stylesheet', href='assets/css/style.css')
-  body    
-    header.bird-box
-      .back-bird
-      .logo
-      .fore-bird
+  body
+    .pre-load
+      header.bird-box
+        
+        .logo
+        
+      
+    .after-load
+      header.bird-box
+        .back-bird
+        .logo
+        .fore-bird
      
-    section.content
+      section.content
         article
           h1 Unique Style
           hr
@@ -91,39 +98,39 @@ html(lang='en')
               img(src='assets/images/posts/three.jpg')
               p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
               p: a.button(href='') Read More
-    footer
-      .row.footer-stuff
-        .columns.three
-          strong FIND US ON
-          ul
-            li
-              a(href="#") s
-            li
-              a(href="") Facebook
-            li
-              a(href="") Instagram
-            li
-              a(href="") Pintrest
+      footer
+        .row.footer-stuff
+          .columns.three
+            strong FIND US ON
+            ul
+              li
+                a(href="#") s
+              li
+                a(href="") Facebook
+              li
+                a(href="") Instagram
+              li
+                a(href="") Pintrest
               
-        .columns.three 
-          strong OTHER SHOPS
-          ul
-          li
-           a(href="") Red Robin
-          li
-           a(href="") Emrald Eagle
-          li
-           a(href="") Crimson Crane
-          li
-           a(href="") Auburn Abbot
-           
-        .columns.six
-          p <strong>Sign Up for the newsletter</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          form.row
-            .columns.eight
-              input.u-full-width(type='email' placeholder='Your Email')
-            .columns.four
-              input.button-primary(type='submit')
+          .columns.three 
+            strong OTHER SHOPS
+            ul
+            li
+             a(href="") Red Robin
+            li
+             a(href="") Emrald Eagle
+            li
+             a(href="") Crimson Crane
+            li
+             a(href="") Auburn Abbot
+             
+          .columns.six
+            p <strong>Sign Up for the newsletter</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            form.row
+              .columns.eight
+                input.u-full-width(type='email' placeholder='Your Email')
+              .columns.four
+                input.button-primary(type='submit')
           
   script(src="assets/js/jquery-1.11.1.min.js")
   script(src="assets/js/main.js")
