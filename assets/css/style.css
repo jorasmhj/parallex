@@ -876,6 +876,11 @@ figure {
     max-width: 640px;
     margin: 0 auto;
     text-align: center; }
+    .content article h1{
+      position:relative;
+      left:-100%;
+      transition:.3s ease-in-out;
+    }
 
 img {
   max-width: 100%; }
