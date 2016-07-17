@@ -22,6 +22,10 @@ $(window).scroll(function(){
 
      });
     }
+    
+    if(wScroll > $('.content article h1').offset.top - $(window).height()){
+         consol.log('ok');
+    }
 
     if(wScroll > $('.large-window').offset().top-$(window).height()){
       //$('.large-window').css({'background-position' : 'center '+ wScroll +'px'});
