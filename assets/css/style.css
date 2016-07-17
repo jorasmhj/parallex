@@ -883,7 +883,7 @@ img {
 .bird-box {
   position: relative;
   height: 600px;
-  background-image: url(../images/bird-bg.jpg);
+  background: url(../images/bird-bg.jpg) #fff;
   background-size: auto 600px;
   background-position: top center;
   background-attachment: fixed;
