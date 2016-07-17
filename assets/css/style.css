@@ -857,7 +857,49 @@ there.
 /* Larger than desktop */
 /* Larger than Desktop HD */
 body {
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  background: white;
+}
+
+.pre-load{
+  display: block;
+  background: #fff;
+  height: 100vh;
+  overflow-y: scroll;
+}
+  .pre-load .bird-box{
+    background: #fff;
+  }
+  .pre-load .logo{
+    height: 100px;
+    width: 100%;
+    background-image: url(../images/black-bird-logo.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 10%;
+    left: 8px;
+    margin-top: -50px;
+    animation: logoani 2s ease-in-out;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes logoani {
+    0%{
+      top:10%;
+    }
+    100%{
+      top:50%;
+    }
+  }
+
+.after-load{
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
 
 h1 {
   color: #ccc;
@@ -867,6 +909,7 @@ figure {
   margin: auto; }
 
 .content {
+  z-index: 2;
   position: relative;
   background: white;
   margin-bottom: 400px;
@@ -877,9 +920,9 @@ figure {
     margin: 0 auto;
     text-align: center; }
     .content article h1{
-      position:relative;
-      left:-100%;
-      transition:.3s ease-in-out;
+      position: relative;
+      //transition: .3s ease-in-out;
+      transform: translate(-300px,0px);
     }
 
 img {
@@ -931,13 +974,13 @@ img {
     margin-bottom: 20px;
     position: relative;
     opacity: 0;
-    transform: translateX(30px);
+    transform: translate(0px,40px);
     transition: all 0.4s ease-in-out;
     overflow: hidden;
     cursor: pointer; }
     .clothes-pics figure.is-showing {
       opacity: 1;
-      transform: translateX(0px); }
+      transform: translate(0px,0px); }
     .clothes-pics figure img {
       display: block;
       transform: scale(1);
