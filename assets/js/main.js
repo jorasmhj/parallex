@@ -1,4 +1,4 @@
-$(window).ready(function(){
+$(document).ready(function(){
   setTimeout(function(){
     //$('.pre-load').hide();
     $('.after-load').fadeIn(1000);
