@@ -23,7 +23,7 @@ $(window).scroll(function(){
      });
     }
     
-    if(wScroll > $('.content').offset.top - $(window).height()){
+    if(wScroll > $('.content').offset.top - $(window).height()/1.5){
          console.log('ok');
     }
 
