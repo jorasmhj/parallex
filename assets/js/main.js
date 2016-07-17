@@ -24,7 +24,8 @@ $(window).scroll(function(){
     }
     
     if(wScroll > $('.content article h1').offset().top-$(window).height()){
-         $('.content article h1').css({'left' : '0'});
+         var offset=Math.min(0,(parseInt(wScroll-$('.content article h1').offset().top+$(window).height()-400)));
+         $('.content article h1').css({"transform" : "translate("+ offset + "px,"+ Math.abs(offset*0.2) + "px)"});
     }
 
     if(wScroll > $('.large-window').offset().top-$(window).height()){
