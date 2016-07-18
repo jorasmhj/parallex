@@ -1,7 +1,7 @@
 $(window).load(function(){
   setTimeout(function(){
     //$('.pre-load').hide();
-    $('.after-load').fadeIn(1000);
+    //$('.after-load').fadeIn(1000);
   },2000);
 
   $(window).scroll(function(){
