@@ -8,7 +8,10 @@
   <script>
     $(window).load(function() {
 		// Animate loader off screen
-		$(".pre-load").fadeOut("slow");;
+		setInterval(function(){
+			$(".pre-load").fadeOut("slow");	
+		},2000);
+		
 	});
   </script>
     <link rel="stylesheet" href="assets/css/style.css">
