@@ -865,7 +865,7 @@ body {
   display: block;
   background: #fff;
   height: 100vh;
-  overflow-y: scroll;
+  //overflow-y: scroll;
 }
   .pre-load .bird-box{
     background: #fff;
